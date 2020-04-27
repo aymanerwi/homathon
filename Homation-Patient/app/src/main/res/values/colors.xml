@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#958A5F</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="divtitle">#02915C</color>
+    <color name="backgroung">#0D8C60</color>
+    <color name="loginbackgroung">#F3F3F3</color>
+    <color name="textcolor">#707070</color>
+    <color name="feildbackground">#D6D6D6</color>
+</resources>

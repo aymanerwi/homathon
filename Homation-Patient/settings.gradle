@@ -1,0 +1,2 @@
+rootProject.name='Homation'
+include ':app'

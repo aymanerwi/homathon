@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/profile"
+            android:title="الملف الطبي" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/add"
+            android:title="اضافة قراءات جديدة" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/doctor"
+            android:title="تواصل مع الممارس الصحي" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar"
+            android:title="سجل المواعيد" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="الاعدادات" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="شارك التطبيق" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="قيمنا" />
+    </group>
+
+
+</menu>

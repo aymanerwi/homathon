@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/divtitle"
+                        android:textAlignment="center"
+                        android:text="الملف الشخصي"
+                        android:textAppearance="?android:attr/textAppearanceLarge">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/rectangle"
+                            android:tag="image_tag"
+                            app:srcCompat="@drawable/rectangle"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/textcolor"
+                            android:text=" عبدالله عبدالرحمن سعيدان العوفي"
+                            android:textAppearance="?android:attr/textAppearanceMedium">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="1">
+                            <TableRow>
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/divtitle"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="فصيلة الدم"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/divtitle"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="تاريخ اخر زيارة"
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/divtitle"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="الزيارة القادمة"
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="O+"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 29-8-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/colorPrimary" />
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="25dp"
+                            android:tag="image_tag"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/map"
+                            tools:ignore="ContentDescription"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewVersion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/divtitle"
+                                android:text=" المركز الافتراضي "
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="30dp"
+                                android:textColor="@color/textcolor"
+                                android:text=" مركز حي سيد الشهداء  "
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الممارس الشخصي"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/divtitle"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="67dp"
+                            android:layout_height="67dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/rectangle"
+                            android:tag="image_tag"
+                            app:srcCompat="@drawable/rectangle"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text=" عبدالله عبدالرحمن سعيدان العوفي"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/textcolor">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="1">
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#707070" />
+
+                            <TableRow>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FF0000FF" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="تواصل مع الممارس"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/divtitle" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="70dp"
+                                    android:layout_marginTop="5dp"
+                                    android:tag="image_tag"
+                                    app:srcCompat="@drawable/contacts"
+                                    tools:ignore="ContentDescription" />
+
+
+                            </TableRow>
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TableLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+
+                            android:stretchColumns="1">
+
+                            <TableRow>
+                                <TextView
+
+                                    android:gravity="center"
+
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:textSize="20dp"
+                                    android:textColor="@color/backgroung"
+                                    android:textAlignment="center"></TextView>
+                                <TextView
+
+                                    android:gravity="center"
+
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="بيانات اخر زيارة"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/backgroung"
+                                    android:textAlignment="center"></TextView>
+                                <TextView
+
+                                    android:gravity="center"
+
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:textSize="20dp"
+                                    android:textColor="@color/backgroung"
+                                    android:textAlignment="center"></TextView>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/divtitle"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" ضغط الدم "
+                                    android:padding="3dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="right"
+                                    android:padding="3dip"
+                                    android:text="السكر"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/divtitle" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/divtitle"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" تاريخ الزيارة "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+
+                            <View
+                                android:layout_marginTop="10dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimary" />
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="180"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 118 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/textcolor"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text=" 5-9-2020 "
+                                    android:gravity="right"
+                                    android:padding="3dip" />
+                            </TableRow>
+
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="image_tag"
+                            app:srcCompat="@drawable/chart"
+                            tools:ignore="ContentDescription"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=" رسم بياني للقراءات المسجلة "
+                            android:textColor="@color/divtitle"
+                            android:textAlignment="center">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="الوصفة الطبية"
+                        android:textSize="30dp"
+                        android:textColor="@color/divtitle"
+                        android:textAlignment="center">
+
+                    </TextView>
+
+                    <TableLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/divtitle"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="اسم الدواء"
+                                android:padding="3dip" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/divtitle"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text=" الجرعات "
+                                android:gravity="right"
+                                android:padding="3dip" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/divtitle"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="ملاحظة"
+                                android:gravity="right"
+                                android:padding="3dip" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/textcolor"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Januvia 100mg"
+                                android:padding="3dip" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/textcolor"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text=" حبة كل ثمان ساعات "
+                                android:gravity="right"
+                                android:padding="3dip" />
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:lines="3"
+                                android:padding="3dip"
+                                android:text="لا يوجد"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/textcolor" />
+                        </TableRow>
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/textcolor"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Januvia 100mg"
+                                android:padding="3dip" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/textcolor"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text=" حبة كل ثمان ساعات "
+                                android:gravity="right"
+                                android:padding="3dip" />
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:lines="3"
+                                android:padding="3dip"
+                                android:text="لا يوجد"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/textcolor" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layoutDirection="rtl"
+                style="@style/CardView"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:stretchColumns="1">
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="اتاريخ صرف الدواء"
+                                android:textSize="25dp"
+                                android:textColor="@color/divtitle"
+                                android:textDirection="rtl">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text=" 5-9-2020 "
+                                android:gravity="right"
+                                android:textSize="25dp"/>
+                        </TableRow>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="image_tag"
+                            app:srcCompat="@drawable/barcode"
+                            tools:ignore="ContentDescription"/>
+
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
